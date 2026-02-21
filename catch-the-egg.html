@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catch the Egg</title>
+<link rel="stylesheet" href="catch-the-egg.css">
+</head>
+<body>
+<div class="game-wrapper">
+    <div class="sidebar">
+        <h2>Catch the Egg</h2>
+        <div class="stat">Lives: <span id="lives"></span></div>
+        <div class="stat">Score: <span id="score">0</span></div>
+        <div class="stat">Time:
+            <div class="timer-bar"><div id="timerFill"></div></div>
+            <span id="timeText">60s</span>
+        </div>
+    </div>
+    <canvas id="board" width="600" height="600" tabindex="0"></canvas>
+</div>
+
+<div id="gameOverScreen" class="game-over hidden">
+    <h1>GAME OVER</h1>
+    <p id="finalScore"></p>
+    <button id="replayBtn">Replay</button>
+    <button id="homeBtn" href="index.html">Home</button>
+</div>
+
+<script src="catch-the-egg.js"></script>
+</body>
+</html>

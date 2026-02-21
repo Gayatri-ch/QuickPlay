@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pac-Man</title>
+    <link rel="stylesheet" href="pacman.css">
+    <script src="pacman.js" defer></script>
+</head>
+<body>
+<div class="game-wrapper">
+    <div class="sidebar">
+        <h2>Pac-Man</h2>
+        <div class="stat">
+            Lives:
+            <span id="livesContainer"></span>
+        </div>
+        <div class="stat">
+            Score: <span id="score">0</span>
+        </div>
+        <div class="stat">
+            Time <br>
+            <div class="timer-bar">
+                <div id="timerFill"></div>
+            </div>
+            <span id="timeText">60s</span>
+        </div>
+        <div class="leaderboard">
+            <h3> Leaderboard</h3>
+            <ul id="leaderboardList"></ul>
+        </div>
+    </div>
+    <canvas id="board"></canvas>
+    <div id="gameOverScreen" class="game-over hidden">
+        <h1>GAME OVER</h1>
+        <p id="finalScore"></p>
+        <button id="replayBtn">Replay</button>
+        <button id="homeBtn" href="index.html">Home</button>
+        <div class="leaderboard gameover-board">
+            <h3> Leaderboard</h3>
+            <ul id="leaderboardListGameOver"></ul>
+        </div>
+        <div id="gameOverLeaderboard">
+            <h3>Top Scores</h3>
+            <ul id="gameOverLeaderboardList"></ul>
+        </div>        
+    </div>
+</div>
+</body>
+</html>
